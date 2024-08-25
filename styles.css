@@ -74,8 +74,8 @@ main {
 
 main article img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
+    height: auto;
     margin: 10px 0;
 }
 
@@ -181,6 +181,12 @@ footer p {
 
 
 @media (max-width: 768px) {
+    .mbl{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
     .container {
         flex-direction: column;
         margin-top: 10px;
@@ -196,20 +202,33 @@ footer p {
     main {
         flex: none; 
     }
+    img.main_p{
+        width: 360px;
+        height: 210px;
+    }
+    .m_c{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 300px;
+    }
 
     
     .food-cards {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        display: flex;
+
     }
 
-    .card {
-        max-width:45%;
+    div.card {
+        max-width: 100px;
         margin-bottom: 20px; 
     }
 
     .card-image {
-        height: 50px; 
+        height: 50px;
+        width: 100px; 
     }
 
     
@@ -224,6 +243,16 @@ footer p {
     .card-content p {
         font-size: 12px;
     }
+    
+    /* main article img {
+        max-width: 780px;
+        max-height: 250px;
+        border-radius: 10px;
+        
+        /* height: auto; */
+        /* margin: 10px 0; */
+    /* } */ 
+    
 }
 
 
@@ -258,7 +287,7 @@ footer p {
 
 .card:hover {
     transform: scale(1.05); 
-    background-color: orange;
+    background-color:bisque;
     box-shadow: 0 5px 20px beige;
     
 }
